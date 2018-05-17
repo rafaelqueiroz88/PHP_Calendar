@@ -1,0 +1,119 @@
+*:focus {
+    outline: none;
+}
+
+.botao-navegacao {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+body {
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+fieldset {
+    border-radius: 5px;
+    width: 400px;
+}
+
+.campo-evento {
+    margin: 5px;
+}
+
+.campo-evento .descricao {
+    width: 80px;
+}
+
+.campo-texto{
+    height: 30px;
+    width: 100%;
+    border-radius: 2px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid green;
+}
+
+.campo-evento:focus {
+    outline: none;
+}
+
+.botao-cadastro {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgba(0, 180, 40, 1);
+    color: #ddd;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: 0px;
+}
+
+.botao-cadastro:hover {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgba(0, 200, 90, 1);
+    color: #ddd;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: 0px;
+}
+
+.botao-navegar {
+    font-size: 17px;
+    background-color: #333;
+    color: #ddd;
+    padding: 20px;
+    margin: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(30, 30, 30, .7);
+}
+
+.calendario {
+    position: relative;
+        left: 15px;
+    padding: 10px;
+}
+
+.data-evento {
+    text-align: center;
+    display: inline-block;
+    width: 13%;
+    height: 90px;
+    font-size: 17px;
+    background-color: rgba(0, 190, 220, .2);
+    color: #333;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 1.6px solid #333;
+    box-shadow: 2px 2px 2px rgba(30, 30, 30, .7);
+}
+
+.data-evento-fds {
+    text-align: center;
+    display: inline-block;
+    width: 13%;
+    height: 90px;
+    font-size: 17px;
+    background-color: rgba(180, 110, 100, .6);
+    color: #333;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 1.6px solid #333;
+    box-shadow: 2px 2px 2px rgba(30, 30, 30, .7);
+}
