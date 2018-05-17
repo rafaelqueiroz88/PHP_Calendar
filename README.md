@@ -46,3 +46,12 @@ ALTER TABLE event_participants ADD CONSTRAINT FOREIGN KEY (user) REFERENCES user
 INSERT INTO `calendar`.`users` (`name`, `lastname`, `email`, `password`, `user_create_date`, `user_last_update`) VALUES ('Rafael', 'Castro', 'rafael@usuario.com', '123123', '2018-05-15 09:12:22', '');
 
 INSERT INTO `calendar`.`users` (`name`, `lastname`, `email`, `password`, `user_create_date`) VALUES ('Verônica', 'Castro', 'veronica@usuario.com', '321321', '2018-05-15 09:13:45');
+
+------------------------------------------------
+
+Or import database: calendar.sql to your databases.
+
+================================================
+Author: Rafael Queiroz de Castro
+e-mail: rafael.qdc88@gmail.com
+
