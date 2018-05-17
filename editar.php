@@ -72,11 +72,6 @@ $m        = isset( $_GET['mes'] ) ? $_GET['mes'] : date( "m" );
                             <label for="evento">Descrição: </label>
                         </div>
                         <input type="text" name="evento" class="campo-texto" id="evento" value="<?php echo Evento::$evento; ?>" required />
-                    </div>                   
-                    <div class="campo-evento">                        
-                        <spam>
-                            O evento será agendado em: <?php echo "$d/$m/$a"; ?>.                                
-                        </spam>                        
                     </div>
                     <div class="campo-evento">
                         <center>
