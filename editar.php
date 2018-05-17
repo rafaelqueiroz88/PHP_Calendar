@@ -16,8 +16,8 @@ new Evento( $db );
 Evento::AbrirEvento( $_GET['id'] );
 
 /**
- * Se caso for executado um cadastro através do verbo POST, recolher os dados,
- * e se todos estiverem ok, executar a função CadastrarEvento da classe Eventos
+ * Se caso for executado uma atualização através do verbo POST, recolher os dados,
+ * e se todos estiverem ok, executar a função AtualizarEvento da classe Eventos
  * em processar.php.
  * A função envia um retorno do tipo boolean. Utilizar para notificar o sucesso
  * ou falha da operação.

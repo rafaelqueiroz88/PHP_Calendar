@@ -108,7 +108,10 @@ namespace Processo {
         }
 
         /**
-         * 
+         * Requer um id
+         * Atualiza um registro para o status 1 (onde 0=sim, 1=não)
+         * Assim os registros não aparecem nas consultas comuns.
+         * A página que utilizar esta função deverá redirecionar o usuário
          */
         public function ApagarEvento( $id ) {
             $query = "UPDATE " . self::$_events . " set status = 1 WHERE id = $id";
@@ -176,6 +179,9 @@ namespace Processo {
         }
 
         /**
+         * Requer um id
+         * Recolhe as informações do evento e armazena nos objetos.
+         * Os objetos podem então ser utilizados e exibidos em tela
          * 
          */
         public function AbrirEvento( $id ) {
@@ -188,7 +194,9 @@ namespace Processo {
         }
 
         /**
-         * 
+         * Requer um id
+         * Atualiza o registro com as informações recebidas
+         * Retorna true or false para tratar a tela que utilizar a função
          */
         public function AtualizarEvento( $id ) {
             $query = "UPDATE " . self::$_events . " set description = ?, event_last_update = now() WHERE id=$id";
@@ -206,7 +214,9 @@ namespace Processo {
         }
 
         /**
-         * 
+         * Requer ano, mes, dia
+         * Exibe a quantidade de eventos para cada dia, mes e ano que esta função receber
+         * Exibe somente a mensagem seguida do total
          */
         public function ListarEventosPorMes( $a, $m, $d ) {
             
