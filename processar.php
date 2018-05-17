@@ -45,9 +45,9 @@ namespace Processo {
         public static function CadastrarEvento() {
 
             $query = "INSERT INTO " . self::$_events . " 
-            (description, event_date, event_create, event_owner) 
+            (description, event_date, event_create, event_owner, status) 
             VALUES
-            (?, ?, now(), ?)";
+            (?, ?, now(), ?, 0)";
             $stmt = self::$conn->prepare( $query );
 
             self::$evento           = htmlspecialchars( strip_tags( self::$evento ) );
